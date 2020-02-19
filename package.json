@@ -1,0 +1,31 @@
+{
+  "name": "api-magalu-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "async-redis": "^1.1.7",
+    "async-request": "^1.2.0",
+    "body-parser": "1.19.0",
+    "compression": "1.7.4",
+    "consign": "0.1.6",
+    "debug": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "express": "4.17.1",
+    "express-validator": "6.2.0",
+    "helmet": "3.21.1",
+    "mongoose": "^5.7.12",
+    "uuid": "^3.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  },
+  "scripts": {
+    "dev": "nodemon index.js",
+    "prod": "node index.js",
+    "test": "nyc --reporter=html mocha --timeout 10000 --exit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
